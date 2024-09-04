@@ -1,0 +1,20 @@
+# "org" ensures this Service is used with the correct Serverless Framework Access Key.
+org: mabenuz
+# "service" is the name of this project. This will also be added to your AWS resource names.
+service: sls-cicd
+
+provider:
+  name: aws
+  runtime: nodejs20.x
+  stage: dev
+  region: us-east-2
+  memorySize: 128
+  timeout: 3
+
+functions:
+  hello:
+    handler: handler.logger
+    events:
+      - http:
+          path: message
+          method: get
