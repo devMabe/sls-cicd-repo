@@ -13,7 +13,7 @@ phases:
     commands:
       - echo Deployment started on `date`
       - echo Deploying with Serverless Framework
-      - export SLS_DISABLE_AUTO_LOGIN=true
+      - sls login --token $SERVERLESS_ACCESS_TOKEN
       - sls deploy -v -s $ENV_NAME
   post_build:
     commands:
