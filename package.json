@@ -10,7 +10,6 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "moment": "^2.30.1",
-    "serverless-remove-forced-login": "^0.1.0"
+    "moment": "^2.30.1"
   }
 }
