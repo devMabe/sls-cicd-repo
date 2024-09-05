@@ -3,9 +3,6 @@ service: sls-cicd
 
 org: mabenuz
 
-plugins:
-  - serverless-remove-forced-login
-
 provider:
   name: aws
   runtime: nodejs20.x
